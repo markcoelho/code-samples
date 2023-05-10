@@ -1,0 +1,110 @@
+/* search popup */
+.popup-drawer {
+ display: block !important;   
+ pointer-events:none;
+ transition: 10s !important;
+}
+.popup-drawer.active {
+   pointer-events:all; 
+}
+.popup-drawer .drawer-inner {
+    opacity: 0;
+    -webkit-transform: translateX(0%) !important;
+    transform: translateX(0%) !important;
+}
+.popup-drawer.active .drawer-inner {
+      opacity: 1;
+}
+
+/* full cart page */
+.woocommerce button[name="update_cart"],
+.woocommerce input[name="update_cart"] {
+	display: none;
+}
+
+/*header*/
+.site-header-upper-inner-wrap{
+	transition: background 0.5s;
+}
+
+/* logo animation */
+.custom-logo{
+	transition:0.5s;
+}
+.custom-logo:hover{
+	opacity:0.6;
+}
+
+/* homepage blog section  */
+.homepage_blog_introduction{
+	height:600px;
+	overflow:hidden;
+}
+.cool_text_blog_ad{
+	position:relative;
+	transition: top 0.5s, opacity 0.2s;
+	transition-timing-function: linear;
+}
+ /* products archive */
+.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button {
+	max-width:70%;
+	padding:15px;
+}
+.woocommerce ul.products li.product .product-action-wrap {
+	display:flex;
+	justify-content:center;
+}
+.woocommerce ul.products.woo-archive-btn-button li.product .price {
+  display:none;
+}
+
+/* mini cart */
+#woofc-count{
+    position:relative;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    top:0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	top: -2px;
+	background-color:rgba(0,0,0,0);
+}
+#woofc-area{
+    transition: opacity 1s;
+}
+#woofc-count-number{
+    top: 30px;
+    right: 0px;
+    font-family:'Roboto';
+    font-size:1rem;
+}
+.woofc-item-remove{
+    color: black !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    top: 10px !important;
+}
+.woofc-item-inner, .woofc-item-remove{
+    -webkit-transform: none !important;
+    transform: none !important;
+}
+.woofc-item-inner{
+	border-top: none;
+	border-bottom: #eeeeee solid 1px !important;
+}
+.woofc-area.woofc-style-02 .woofc-area-mid .woofc-item .woofc-item-inner {
+	padding: 30px 0;
+}
+.woofc-area-mid{
+	padding-top: 20px;
+}
+.quantity, .woofc-qty{
+    height:100% !important;
+}
+.woofc-qty{
+ border-width:1px;   
+}
+.woofc-count span{
+	background-color: #ED7939;
+}
